@@ -14,14 +14,22 @@ struct ContentView: View {
     @State var count = 0
 
     var body: some View {
+        
         VStack {
-            Text("Guess Number: ??? ")
+            Spacer()
+                .frame(width: 10)
+            
+            
+            Text("Guess Number:  ??? ")
                 .foregroundColor(.blue)
                 .font(.title)
-            Text("")
             
+            
+            Spacer()
+                .frame(width: 10)
             Text(guess.HL(High: game.target.Num))
-                .foregroundColor(.purple)
+                .foregroundColor(.black)
+            
             
             ColorSlider(value: $guess.Num, trackColor: .red)
                 .padding()
@@ -52,10 +60,17 @@ struct ContentView: View {
                     }
                 )
             }
+            Spacer()
+                .frame(width: 10)
         }
+        
         .padding()
         .background(LinearGradient(gradient: Gradient(colors: [.yellow, .pink]), startPoint: .topLeading, endPoint: .bottomTrailing))
         .edgesIgnoringSafeArea(.all)
+        
+        Spacer()
+            .frame(width: 20)
+        
     }
 }
 

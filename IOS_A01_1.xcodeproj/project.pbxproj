@@ -48,6 +48,8 @@
 		312EA2CC2B5A5D810099D628 /* IOS_A01_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_A01_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		312EA2DA2B5A5FF00099D628 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		312EA2DC2B5A5FFD0099D628 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		31E9909B2B63825400168745 /* cat-meow.avif */ = {isa = PBXFileReference; lastKnownFileType = file; name = "cat-meow.avif"; path = "../../../../Downloads/cat-meow.avif"; sourceTree = "<group>"; };
+		31E9909C2B6382EF00168745 /* cat-meow.avif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cat-meow.avif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				312EA2D92B5A5FCE0099D628 /* Model */,
 				312EA2AF2B5A5D7E0099D628 /* IOS_A01_1App.swift */,
 				312EA2B12B5A5D7E0099D628 /* ContentView.swift */,
+				31E9909C2B6382EF00168745 /* cat-meow.avif */,
 				312EA2B32B5A5D810099D628 /* Assets.xcassets */,
 				312EA2B52B5A5D810099D628 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			children = (
 				312EA2DA2B5A5FF00099D628 /* Game.swift */,
 				312EA2DC2B5A5FFD0099D628 /* Number.swift */,
+				31E9909B2B63825400168745 /* cat-meow.avif */,
 			);
 			path = Model;
 			sourceTree = "<group>";
