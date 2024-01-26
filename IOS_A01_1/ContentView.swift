@@ -21,22 +21,23 @@ struct ContentView: View {
             
             
             Text("Guess Number:  ??? ")
-                .foregroundColor(.blue)
+                .foregroundColor(.yellow)
                 .font(.title)
-            
-            
             Spacer()
                 .frame(width: 10)
+            
+            
             Text(guess.HL(High: game.target.Num))
-                .foregroundColor(.black)
+                .foregroundColor(.green)
             
             
-            ColorSlider(value: $guess.Num, trackColor: .red)
+            ColorSlider(value: $guess.Num, trackColor: .blue)
                 .padding()
             
             Text(guess.intString())
                 .foregroundColor(.green)
-            
+            Spacer()
+                .frame(width: 10)
             Button("Hit Me!!!") {
                 game.check(guess: guess)
                 count = count + 1
@@ -45,8 +46,9 @@ struct ContentView: View {
                 }
             }
             .padding()
-            .background(Color.orange)
-            .foregroundColor(.white)
+            .background(LinearGradient(gradient: Gradient(colors: [.yellow, .orange, .red]), startPoint: .topLeading,
+                                       endPoint: .bottomTrailing))
+            .foregroundColor(.black)
             .cornerRadius(10)
             
             .alert(isPresented: $showScore) {
@@ -65,7 +67,8 @@ struct ContentView: View {
         }
         
         .padding()
-        .background(LinearGradient(gradient: Gradient(colors: [.yellow, .pink]), startPoint: .topLeading, endPoint: .bottomTrailing))
+        .background(LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .topLeading,
+            endPoint: .bottomTrailing))
         .edgesIgnoringSafeArea(.all)
         
         Spacer()
@@ -80,11 +83,11 @@ struct ColorSlider: View {
     var body: some View {
         HStack {
             Text("0")
-                .foregroundColor(.blue)
+                .foregroundColor(.green)
             Slider(value: $value)
                 .accentColor(trackColor)
             Text("20")
-                .foregroundColor(.blue)
+                .foregroundColor(.green)
         }
     }
 }
