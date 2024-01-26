@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Number {
+    
     var Num = 0.5
     
     
@@ -31,5 +33,18 @@ struct Number {
     
     func intString() -> String {
         "R: \(Int(Num * 20))"
+    }
+    
+    func  HL(High: Double) -> String {
+        if Num * 20.0 > High {
+            
+            return "HIGH !"
+        }
+        
+        return "LOW !"
+        
+        
+        
+        
     }
 }
