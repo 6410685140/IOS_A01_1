@@ -38,13 +38,9 @@ struct Number {
     func  HL(High: Double) -> String {
         if Num * 50.0 > High {
             
-            return "> HIGH !"
+            return "< HIGH !"
         }
         
-        return "< LOW !"
-        
-        
-        
-        
+        return "> LOW !"
     }
 }
