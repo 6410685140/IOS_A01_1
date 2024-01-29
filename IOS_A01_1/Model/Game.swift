@@ -7,7 +7,9 @@
 
 import Foundation
 
+
 struct Game {
+    var guess = Number()
     var target = Number.random()
     var score = 0
     
@@ -21,5 +23,6 @@ struct Game {
     mutating func startNewGame() {
         score = 0
         target = Number.random()
+        
     }
 }

@@ -15,12 +15,12 @@ struct Number {
     
     static func random() -> Number {
         var number1 = Number()
-        number1.Num = Double.random(in: 0...20)
+        number1.Num = Double.random(in: 0...50)
         return number1
     }
 
     func difference(target: Number) -> Double {
-        var n_Diff = Num * 20.0 - target.Num
+        var n_Diff = Num * 50.0 - target.Num
         if n_Diff < 0 {
             n_Diff = 0 - n_Diff
         }
@@ -32,16 +32,16 @@ struct Number {
         }
     
     func intString() -> String {
-        "R: \(Int(Num * 20))"
+        "R: \(Int(Num * 50))"
     }
     
     func  HL(High: Double) -> String {
-        if Num * 20.0 > High {
+        if Num * 50.0 > High {
             
-            return "HIGH !"
+            return "> HIGH !"
         }
         
-        return "LOW !"
+        return "< LOW !"
         
         
         
