@@ -77,7 +77,6 @@ struct ContentView: View {
             Spacer()
                 .frame(width: 10)
         }
-        
         .padding()
         .background(LinearGradient(gradient: Gradient(colors: [.black, .gray]), startPoint: .topLeading,
             endPoint: .bottomTrailing))
